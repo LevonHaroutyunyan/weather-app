@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.8.2"
+    }
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "eol-last": ["error", "always"],
+    "no-trailing-spaces": ["error"],
+    "no-whitespace-before-property": ["error"],
+    "object-curly-spacing": ["error", "always"],
+    "prefer-const": ["error"],
+    "prefer-destructuring": ["error"],
+    "prefer-arrow-callback": ["error"],
+    "comma-dangle": ["error", "always-multiline"],
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": true,
+        "FunctionExpression": true
+      }
+    }],
+    "valid-jsdoc": ["error"],
+    "arrow-parens": ["error", "as-needed"],
+    "react/prefer-stateless-function": ["error"]
+  }
+}
